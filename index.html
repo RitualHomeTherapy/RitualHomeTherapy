@@ -12,54 +12,110 @@
       background: #f9f9f9;
       color: #333;
     }
-
-    /* HERO sekcija */
     .hero {
-      height: 100vh;
-      background: url('pozadina.jpg') no-repeat center center/cover;
+      height: 60vh;
+      background: url('slika-hero.jpg') no-repeat center center/cover;
       position: relative;
       display: flex;
       justify-content: center;
       align-items: center;
       text-align: center;
       color: white;
-      padding: 20px;
     }
-
-    .overlay {
+    .hero .overlay {
       position: absolute;
       top: 0; left: 0;
       width: 100%; height: 100%;
-      background: rgba(0, 0, 0, 0.65); /* tamni sloj preko slike */
+      background: rgba(0, 0, 0, 0.6);
     }
-
     .hero-content {
       position: relative;
       z-index: 1;
-      max-width: 800px;
+      padding: 20px;
     }
-
     .hero h1 {
       font-size: 42px;
       margin-bottom: 20px;
-      color: #d3a9ff; /* ljubičasta nijansa */
+      color: #d3a9ff; /* svetlija ljubičasta za kontrast */
     }
-
     .hero p {
-      font-size: 20px;
-      line-height: 1.6;
+      font-size: 22px;
+      max-width: 600px;
+      margin: 0 auto;
     }
-
-    /* Sekcija usluga */
     .services {
-      margin: 40px 20px;
+      margin: 30px 20px;
       text-align: left;
     }
-
     .service {
       background: #fff;
       border-radius: 8px;
       padding: 15px;
       margin-bottom: 15px;
-      box-shadow: 0px
+      box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: space-between;
+      font-size: 18px;
+    }
+    .price {
+      font-weight: bold;
+      color: #7f3fbf; /* ljubičasta nijansa */
+    }
+    a.button {
+      display: inline-block;
+      background-color: #7f3fbf;
+      color: white;
+      text-decoration: none;
+      padding: 14px 30px;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 18px;
+      margin: 15px 5px;
+      transition: background-color 0.3s ease;
+    }
+    a.button:hover {
+      background-color: #5a2e80;
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>RitualHomeTherapy</h1>
+      <p>Dobrodošli u RitualHomeTherapy — mesto gde telo i duh nalaze ravnotežu uz pažljivo birane ritualne masaže.</p>
+    </div>
+  </div>
+
+  <!-- O meni -->
+  <div style="text-align:center; padding: 30px 20px;">
+    <img src="moja-slika.png" alt="Nikola Rončević" style="max-width:220px; width:100%; border-radius:12px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" />
+    <h2>O meni</h2>
+    <p>Zovem se Nikola Rončević. Specijalizovan sam za masaže koje vraćaju unutrašnji mir i oslobađaju od napetosti, sa ciljem da se osećate obnovljeno.</p>
+  </div>
+
+  <!-- Usluge i cene -->
+  <div class="services">
+    <div class="service">
+      <span>Terapeutska masaža (50 min)</span>
+      <span class="price">5.000 RSD</span>
+    </div>
+    <div class="service">
+      <span>Relax Aroma Ritualna Terapija (60 min)</span>
+      <span class="price">6.000 RSD</span>
+    </div>
+    <div class="service">
+      <span>Parcijalna masaža (30 min)</span>
+      <span class="price">3.000 RSD</span>
+    </div>
+  </div>
+
+  <!-- Kontakt dugme -->
+  <div style="text-align:center; padding-bottom: 40px;">
+    <a href="tel:+381669335301" class="button">Pozovi</a>
+    <a href="https://wa.me/381669335301" class="button">WhatsApp</a>
+  </div>
+</body>
+</html>
+
 
