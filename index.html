@@ -3,118 +3,63 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>RitualHomeTherapy - Terapeutska masaža</title>
+  <title>RitualHomeTherapy</title>
   <style>
-    body {
+    body, html {
+      margin: 0;
+      padding: 0;
       font-family: Arial, sans-serif;
-      max-width: 500px;
-      margin: 20px auto;
-      padding: 0 20px;
-      text-align: center;
       background: #f9f9f9;
       color: #333;
     }
 
-    header {
-      margin-bottom: 30px;
+    /* HERO sekcija */
+    .hero {
+      height: 100vh;
+      background: url('pozadina.jpg') no-repeat center center/cover;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 20px;
     }
 
-    h1 {
-      margin: 10px 0;
-      font-size: 28px;
-      color: #222;
+    .overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.65); /* tamni sloj preko slike */
     }
 
-    h2 {
-      margin-top: 30px;
-      font-size: 22px;
-      color: #444;
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
     }
 
-    p {
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 20px;
+      color: #d3a9ff; /* ljubičasta nijansa */
+    }
+
+    .hero p {
+      font-size: 20px;
       line-height: 1.6;
     }
 
-    img.profile {
-      max-width: 220px;
-      width: 100%;
-      height: auto;
-      border-radius: 12px;
-      margin: 20px 0;
-      object-fit: cover;
-      box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
-    }
-
+    /* Sekcija usluga */
     .services {
-      margin: 20px 0;
+      margin: 40px 20px;
       text-align: left;
     }
 
     .service {
       background: #fff;
       border-radius: 8px;
-      padding: 12px;
-      margin-bottom: 12px;
-      box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
-      display: flex;
-      justify-content: space-between;
-      font-size: 16px;
-    }
+      padding: 15px;
+      margin-bottom: 15px;
+      box-shadow: 0px
 
-    .price {
-      font-weight: bold;
-      color: #007BFF;
-    }
-
-    a.button {
-      display: inline-block;
-      background-color: #007BFF;
-      color: white;
-      text-decoration: none;
-      padding: 14px 30px;
-      border-radius: 6px;
-      font-weight: bold;
-      font-size: 18px;
-      margin: 15px 5px;
-      transition: background-color 0.3s ease;
-    }
-
-    a.button:hover {
-      background-color: #0056b3;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>RitualHomeTherapy</h1>
-    <p>Vaša oaza mira i relaksacije u sopstvenom domu.</p>
-  </header>
-
-  <!-- O meni -->
-  <img src="moja-slika.png" alt="Nikola Rončević" class="profile" />
-  <h2>O meni</h2>
-  <p>Zovem se Nikola Rončević. Specijalizovan sam za terapeutske masaže koje vraćaju ravnotežu, oslobađaju od stresa i doprinose zdravlju tela i duha.</p>
-
-  <!-- Usluge i cene -->
-  <h2>Usluge</h2>
-  <div class="services">
-    <div class="service">
-      <span>Terapeutska masaža (60 min)</span>
-      <span class="price">5000 RSD</span>
-    </div>
-    <div class="service">
-      <span>Relax masaža (60 min)</span>
-      <span class="price">4500 RSD</span>
-    </div>
-    <div class="service">
-      <span>Sportska masaža (45 min)</span>
-      <span class="price">4000 RSD</span>
-    </div>
-  </div>
-
-  <!-- Dugmad za kontakt -->
-  <h2>Kontakt</h2>
-  <a href="tel:+381669335301" class="button">Pozovi</a>
-  <a href="https://wa.me/381669335301" class="button">WhatsApp</a>
-</body>
-</html>
